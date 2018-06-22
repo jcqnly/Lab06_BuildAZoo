@@ -34,6 +34,13 @@ namespace BuildAZoo
             //overriding a virtual method (Diet())
             Console.WriteLine($"{bear.Diet()}");
 
+            //implementing the IFly Interface on Bear
+            Console.WriteLine($"{bear.WhyIFly("campers")}");
+            //implementing the ISwimAndKill Interface on Bear
+            Console.WriteLine($"Is {bear.Name} bloodthirsty?  {bear.BloodThirsty}!!");
+
+            Console.WriteLine("<-------------------------->");
+
             //NONLACTATING ANIMALS
             //instantiating a shark
             Shark shark = new Shark();
@@ -44,9 +51,12 @@ namespace BuildAZoo
             //overriding an abstract property (Name) and
             //overriding a virtual property (Noise)
             Console.WriteLine($"{shark.Name} goes {shark.Noise}");
-
             //overriding a virtual method (Diet())
             Console.WriteLine($"{shark.Diet()}");
+            //implementing the ISwimAndKill interface on shark
+            Console.WriteLine($"Is {shark.Name} blood thirsty? mmm...{shark.BloodThirsty}!");
+            //implementing the IFly interface on shark
+            Console.WriteLine($"{shark.WhyIFly("the day pigs fly")}");
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BuildAZoo.Classes.NonLactating.Fish.FishWithCartilage
 {
-    public class Shark : FishWithCartilage, ISwimAndKill
+    public class Shark : FishWithCartilage, ISwimAndKill, IFly
     {
         public override string Name { get; set; } = "Sharky";
         public override string FavFood { get; set; } = "humans";
@@ -18,6 +18,11 @@ namespace BuildAZoo.Classes.NonLactating.Fish.FishWithCartilage
         public override string Appearance()
         {
             return $"The {Name} is a scary looking fishy!";
+        }
+
+        public string WhyIFly(string input)
+        {
+            return $"{Name} will fly {input}";
         }
     }
 }

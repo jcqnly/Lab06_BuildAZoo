@@ -9,6 +9,6 @@ namespace BuildAZoo.Classes
     /// </summary>
     interface IFly
     {
-        string HowCanIFly(string input);
+        string WhyIFly(string input);
     }
 }

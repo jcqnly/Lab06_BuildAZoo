@@ -24,7 +24,7 @@ This exercise runs on .NET Core 2.1, which can be downloaded [here](https://www.
 After installing the [.NET Core 2.1 SDK](https://www.microsoft.com/net/download/macos), clone this repo onto your machine. From a terminal interface, go to where this was cloned and type the following commands:
 
 ```
-cd Lab05_Build_A_Zoo_
+cd Lab06_BuildAZoo
 dotnet restore
 dotnet run
 ```

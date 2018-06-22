@@ -4,7 +4,8 @@ using System.Text;
 
 namespace BuildAZoo.Classes.NonLactating.Fish
 {
-    class Fish
+    public abstract class Fish : NonLactating
     {
+        public virtual bool HasScales { get; set; }
     }
 }

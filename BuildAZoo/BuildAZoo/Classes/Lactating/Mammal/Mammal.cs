@@ -4,7 +4,11 @@ using System.Text;
 
 namespace BuildAZoo.Classes.Lactating.Mammal
 {
-    class Mammal
+    /// <summary>
+    /// base class for lactating mammals
+    /// </summary>
+    public abstract class Mammal : Lactating
     {
+        public bool MammaryGlands { get; set; } = true;
     }
 }

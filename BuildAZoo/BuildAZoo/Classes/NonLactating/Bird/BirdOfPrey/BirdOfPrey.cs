@@ -4,7 +4,8 @@ using System.Text;
 
 namespace BuildAZoo.Classes.NonLactating.Bird.BirdOfPrey
 {
-    class BirdOfPrey
+    public abstract class BirdOfPrey : Bird
     {
+        public override bool IsCarnivorous { get; set; } = true;
     }
 }

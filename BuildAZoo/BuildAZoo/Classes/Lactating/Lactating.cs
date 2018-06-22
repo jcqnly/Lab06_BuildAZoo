@@ -4,7 +4,54 @@ using System.Text;
 
 namespace BuildAZoo.Classes.Lactating
 {
-    public class Lactating
+    /// <summary>
+    /// Base class for lactating zoo animals
+    /// </summary>
+    public abstract class Lactating
     {
+        //Every lactating animal will have the following properties
+
+        /// <summary>
+        /// What's the name of this lactating animal?
+        /// </summary>
+        public abstract string Name { get; set; }
+
+        /// <summary>
+        /// What sort of noise does this animal make?
+        /// </summary>
+        public virtual string Noise { get; set; }
+
+        /// <summary>
+        /// get the number of legs
+        /// </summary>
+        public abstract int Legs { get; set; }
+
+        /// <summary>
+        /// What's  this animal's favorite thing to eat?
+        /// </summary>
+        public virtual string FavFood { get; set; }
+
+        /// <summary>
+        /// What are defining characteristics of this animal
+        /// </summary>
+        /// <returns></returns>
+        public abstract string Appearance();
+
+        /// <summary>
+        /// What does this lactating animal eat?
+        /// </summary>
+        public virtual string Diet()
+        {
+            return $"{Name} really likes {FavFood}!";
+        }
+
+        /// <summary>
+        /// What does this animal sound like
+        /// </summary>
+        /// <returns>a string with the name of the animal</returns>
+        public string Sound()
+        {
+            return $"{Noise}.  I am {Name}.";
+        }
     }
 }

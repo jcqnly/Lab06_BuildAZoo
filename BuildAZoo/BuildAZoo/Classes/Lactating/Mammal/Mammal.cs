@@ -10,5 +10,6 @@ namespace BuildAZoo.Classes.Lactating.Mammal
     public abstract class Mammal : Lactating
     {
         public bool MammaryGlands { get; set; } = true;
+        public virtual bool IsNocturnal { get; set; }
     }
 }

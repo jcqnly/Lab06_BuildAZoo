@@ -1,6 +1,7 @@
 # Lab06 Interfaces
 This exercise implements the concepts of Interfaces using a zoo as the running theme.
 
+[![Coverage Status](https://coveralls.io/repos/github/jcqnly/Lab06_BuildAZoo/badge.svg?branch=master)](https://coveralls.io/github/jcqnly/Lab06_BuildAZoo?branch=master)
 ---
 ## Concepts Implemented
 Interfaces are like abstract classes in that they have behaviours that classes can implement.  
